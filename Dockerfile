@@ -4,7 +4,7 @@ FROM ubuntu:18.04
 ENV LC_ALL en_US.UTF-8
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get update && apt-get install -y python3-dev python3-pip mysql-server libmysqlclient-dev libxml2-dev libxslt1-dev
+RUN apt-get update && apt-get install -y python3-dev python3-pip mysql-server libmysqlclient-dev libxml2-dev libxslt1-dev wget
 RUN python3 -V
 
 # SYSTEM ACTIONS
