@@ -14,11 +14,6 @@ RUN python3 -V
 # SYSTEM ACTIONS
 WORKDIR /etc
 
-ADD ./requirements.txt /etc/requirements.txt
-ADD ./requirements_junoleaf.txt /etc/requirements_junoleaf.txt
-ADD ./requirements_inspectologist.txt /etc/requirements_inspectologist.txt
-RUN pip3 install -r requirements.txt
-
 #RUN python3 -m nltk.downloader all
 #RUN python3 -m spacy download en
 
